@@ -1,0 +1,8 @@
+.session-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #ffffffdd;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.08);
+  font-size: 14px;
+}

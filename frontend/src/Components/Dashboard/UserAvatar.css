@@ -1,0 +1,58 @@
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #00ffff;
+}
+
+.logout-btn {
+  background: transparent;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.logout-btn:hover {
+  background-color: #00ffff;
+  color: black;
+}

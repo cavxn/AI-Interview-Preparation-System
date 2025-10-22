@@ -1,0 +1,186 @@
+/* Background */
+.dashboard-wrapper {
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+/* Animate background */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.dashboard-container {
+  flex: 1;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.welcome-banner {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.email-subtext {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Summary Stats */
+.summary-section {
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 180px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+.stat-card h3 {
+  font-size: 16px;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+/* Tip */
+.tip-of-day {
+  font-style: italic;
+  margin-bottom: 30px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
+  border-left: 3px solid #00ffff;
+  border-radius: 6px;
+}
+
+/* Main Grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* Camera box */
+.camera-box {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.start-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #00ffff, #0066ff);
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+/* Sessions section */
+.sessions-section {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.07);
+}
+
+/* Tips list */
+.tips-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tips-section li {
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 3px solid #00ffff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.sessions-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sessions-section ul li {
+  margin-bottom: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 6px 12px;
+  border-left: 3px solid #00ffff;
+  border-radius: 5px;
+}
+
+blockquote {
+  background: #1a1a1a;
+  padding: 10px 15px;
+  border-left: 4px solid #00ffff;
+  margin: 10px 0;
+}
+.dashboard-container {
+  margin-left: 220px;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.sessions-section,
+.tips-section,
+.camera-section,
+.summary-section {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.dark-mode .dashboard-container {
+  background-color: #121212;
+  color: #f0f0f0;
+}
